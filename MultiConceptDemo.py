@@ -1,10 +1,15 @@
 import warnings
+from pathlib import Path
+import sys
 
 warnings.filterwarnings(
 	"ignore",
 	message=r"The CUDA compiler succeeded, but said the following:.*deprecated-gpu-targets.*",
 	category=UserWarning,
 )
+
+LOCAL_PACKAGE_ROOT = Path(__file__).resolve().parent / "PyHierarchicalTsetlinMachineCUDA"
+sys.path.insert(0, str(LOCAL_PACKAGE_ROOT))
 
 from PyHierarchicalTsetlinMachineCUDA.tm import MultiClassTsetlinMachine
 import numpy as np

@@ -6,8 +6,10 @@ import keras
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 from keras.datasets import imdb
+
 from PyHierarchicalTsetlinMachineCUDA.tm import MultiClassTsetlinMachine
-import PyHierarchicalTsetlinMachineCUDA.tm as tm
+import PyHierarchicalTsetlinMachineCUDA.tm as htm
+
 import argparse
 
 def default_args(**kwargs):
@@ -15,9 +17,9 @@ def default_args(**kwargs):
 	parser.add_argument("--epochs", default=10, type=int)
 	parser.add_argument("--number-of-clauses", default=2, type=int)
 	parser.add_argument("--number-of-examples", default=10000, type=int) # Number of training and testing examples
-	parser.add_argument("--T", default=128, type=int)
-	parser.add_argument("--s", default=21.1, type=float)
-	parser.add_argument("--number-of-alternatives", default=96, type=int) # Number of alternatives in the second layer of the hierarchy
+	parser.add_argument("--T", default=80*16, type=int)
+	parser.add_argument("--s", default=27.0, type=float)
+	parser.add_argument("--number-of-alternatives", default=1000, type=int) # Number of alternatives in the second layer of the hierarchy
 	parser.add_argument("--number-of-elements", default=2500, type=int) # Number of unique integers
 	parser.add_argument("--number-of-copies", default=1, type=int) # Synonym grupper
 	parser.add_argument("--noise", default=0.0, type=float)
@@ -72,7 +74,6 @@ for i in range(train_y.shape[0]):
                                 vocabulary[phrase] = 1
 
 # Assign a bit position to each N-gram (minimum frequency 10) 
-
 phrase_bit_nr = {}
 bit_nr_phrase = {}
 bit_nr = 0
@@ -85,7 +86,6 @@ for phrase in vocabulary.keys():
         bit_nr += 1
 
 # Create bit representation
-
 X_train = np.zeros((train_y.shape[0], len(phrase_bit_nr)), dtype=np.uint32)
 Y_train = np.zeros(train_y.shape[0], dtype=np.uint32)
 for i in range(train_y.shape[0]):
@@ -128,7 +128,7 @@ selected_features = SKB.get_support(indices=True)
 
 selected_phrases = [bit_nr_phrase[int(original_bit)] for original_bit in selected_features]
 
-print("\nSelected words/ngrams used by the Tsetlin Machine:\n")
+print("Selected words ngrams used by the Tsetlin Machine:")
 for tm_feature_nr, phrase in enumerate(selected_phrases):
     print("%3d -> %s" % (tm_feature_nr, phrase))
 
@@ -136,18 +136,22 @@ X_train = SKB.transform(X_train)
 X_test = SKB.transform(X_test)
 
 tm = MultiClassTsetlinMachine(
-	args.number_of_clauses,
+	args.number_of_clauses, # Number of class labels
 	args.T,
 	args.s,
 	number_of_state_bits=8,
 	boost_true_positive_feedback=0,
 	hierarchy_structure=(
-		(tm.AND_GROUP, FEATURES), # The first layer is an AND group that takes the input features
-		(tm.OR_ALTERNATIVES, args.number_of_alternatives), # The second layer is an OR group that takes the output of the first layer
-		(tm.AND_ALTERNATIVES, args.number_of_copies) # The third layer is an AND group that takes the output of the second layer and creates copies
+                (htm.AND_GROUP, FEATURES), # The first layer is an AND group that takes the input features
+                (htm.OR_ALTERNATIVES, args.number_of_alternatives), # The second layer is an OR group that takes the output of the first layer
+                (htm.AND_ALTERNATIVES, args.number_of_copies) # The third layer is an AND group that takes the output of the second layer and creates copies
 	),
 	append_negated=False
 )
+
+# Store results (including the rules of the clauses) for each epoch
+results = {}
+
 print(f"\nAccuracy over {args.epochs} epochs:\n")
 for e in range(args.epochs):
         start_training = time()
@@ -159,8 +163,25 @@ for e in range(args.epochs):
         stop_testing = time()
 
         print("#%d Accuracy: %.2f%% Training: %.2fs Testing: %.2fs" % (e+1, result, stop_training-start_training, stop_testing-start_testing))
-        tm.print_hierarchy()
+        #tm.print_hierarchy()
 
         # Print hierarchy structure with the names of the selected phrases
-        
+        tm.print_hierarchy(feature_names=selected_phrases)
+
+        # Store results with accuracy and rules in the clauses for each epoch
+        results[e] = {
+                "accuracy": result,
+                "clauses": tm.print_hierarchy(feature_names=selected_phrases)
+        }
+
+        # Save results to a file
+        with open(f"results_{args.T}_{args.s}_{args.number_of_copies}.txt", "w") as f:
+            for epoch, epoch_results in results.items():
+                f.write(f"Epoch {epoch + 1}:\n")
+                f.write(f"Accuracy: {epoch_results['accuracy']:.2f}%\n")
+                f.write("Clauses:\n")
+                for clause in epoch_results['clauses']:
+                    f.write(f"  {clause}\n")
+                f.write("\n")
+
         print("----------------------------------------------------------------------------------------------")
