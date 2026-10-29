@@ -1,0 +1,60 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1791878314.768229  298023 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Downloading dataset...
+Producing bit representation...
+Selecting features...
+
+Accuracy over 10 epochs:
+
+#1 Accuracy: 61.80% Training: 30.96s Testing: 6.45s
+
+CLASS 0
+
+
+CLAUSE #0: (( ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ ¬great ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad))
+
+CLAUSE #1: ((¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst ∧ ¬no) ∨ ¬bad ∨  ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬no ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad))
+
+CLASS 1
+
+
+CLAUSE #0: ((¬bad ∨ ¬bad ∨  ∨  ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬worst ∨  ∨ ¬bad ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨  ∨  ∨  ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨  ∨ (¬bad ∧ ¬worst) ∨  ∨  ∨ ¬bad ∨  ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨ ¬worst ∨ (¬bad ∧ ¬no) ∨  ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨  ∨  ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨  ∨  ∨ ¬worst ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨  ∨ ¬bad))
+
+CLAUSE #1: ((bad ∨  ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨ bad ∨ bad ∨  ∨  ∨ bad ∨  ∨  ∨  ∨ bad ∨  ∨  ∨ bad ∨ bad ∨  ∨  ∨ bad ∨  ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨  ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad))
+#2 Accuracy: 61.80% Training: 29.31s Testing: 6.49s
+
+CLASS 0
+
+
+CLAUSE #0: (( ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨ bad ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨ bad ∨ bad ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨  ∨  ∨ ))
+
+CLAUSE #1: ((¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨  ∨  ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬worst ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨  ∨ ¬bad ∨  ∨  ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨  ∨  ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨  ∨ ¬worst))
+
+CLASS 1
+
+
+CLAUSE #0: ((¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ (¬bad ∧ ¬no) ∨  ∨  ∨ ¬bad ∨  ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨  ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad))
+
+CLAUSE #1: (( ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ ))
+#3 Accuracy: 61.80% Training: 29.20s Testing: 6.43s
+
+CLASS 0
+
+
+CLAUSE #0: (( ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨  ∨ bad ∨  ∨  ∨  ∨ bad ∨  ∨ ))
+
+CLAUSE #1: (( ∨ ¬worst ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬worst ∨  ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬worst ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨  ∨  ∨ ¬bad ∨ ¬worst ∨ ¬worst ∨  ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬worst ∨  ∨  ∨ ¬worst ∨ ¬bad ∨  ∨ ¬bad ∨ ¬worst ∨  ∨  ∨  ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬worst ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬worst ∨  ∨  ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬worst ∨  ∨ ¬bad ∨  ∨  ∨ ¬worst ∨  ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬worst ∨ ¬worst ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬worst ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨  ∨  ∨ ¬worst ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ))
+
+CLASS 1
+
+
+CLAUSE #0: (( ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨  ∨ (¬bad ∧ ¬worst) ∨  ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨  ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ ¬bad ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨ ¬bad ∨ (¬bad ∧ ¬worst) ∨  ∨ ¬bad ∨ ¬bad))
+
+CLAUSE #1: (( ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨  ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad))
+#4 Accuracy: 61.80% Training: 29.20s Testing: 6.48s
+
+CLASS 0
+
+
+CLAUSE #0: ((bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨ bad ∨  ∨  ∨ bad ∨  ∨ bad ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ bad ∨ bad ∨ bad ∨  ∨ bad ∨  ∨ bad ∨  ∨ bad ∨ 

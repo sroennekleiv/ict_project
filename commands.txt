@@ -1,0 +1,2 @@
+# Run and dump output
+python -u ImdbHTM.py 2<&1 | tee "results/output_$(date +%m-%d_%H-%M-%S).txt"

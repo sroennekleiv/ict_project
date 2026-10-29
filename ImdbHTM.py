@@ -1,5 +1,6 @@
 import numpy as np
 from time import time
+from datetime import datetime
 
 import keras
 
@@ -12,22 +13,37 @@ import PyHierarchicalTsetlinMachineCUDA.tm as htm
 
 import argparse
 
+def format_parameter(value):
+	text = ("%g" % value) if isinstance(value, float) else str(value)
+	return text.replace("-", "m").replace(".", "p")
+
+
+def make_default_clauses_output_path(args):
+	timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+	return "imdb_htm_s%s_T%s_alt%s_%s.txt" % (
+		format_parameter(args.s),
+		format_parameter(args.T),
+		format_parameter(args.number_of_alternatives),
+		timestamp,
+	)
+
 def default_args(**kwargs):
-	parser = argparse.ArgumentParser()
-	parser.add_argument("--epochs", default=10, type=int)
-	parser.add_argument("--number-of-clauses", default=2, type=int)
-	parser.add_argument("--number-of-examples", default=10000, type=int) # Number of training and testing examples
-	parser.add_argument("--T", default=80*16, type=int)
-	parser.add_argument("--s", default=27.0, type=float)
-	parser.add_argument("--number-of-alternatives", default=1000, type=int) # Number of alternatives in the second layer of the hierarchy
-	parser.add_argument("--number-of-elements", default=2500, type=int) # Number of unique integers
-	parser.add_argument("--number-of-copies", default=1, type=int) # Synonym grupper
-	parser.add_argument("--noise", default=0.0, type=float)
-	args = parser.parse_args()
-	for key, value in kwargs.items():
-		if key in args.__dict__:
-			setattr(args, key, value)
-	return args
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--epochs", default=10, type=int)
+        parser.add_argument("--number-of-clauses", default=2, type=int)
+        parser.add_argument("--number-of-examples", default=10000, type=int) # Number of training and testing examples
+        parser.add_argument("--T", default=1000, type=int)
+        parser.add_argument("--s", default=15.0, type=float)
+        parser.add_argument("--number-of-alternatives", default=100, type=int) # Number of alternatives in the second layer of the hierarchy
+        parser.add_argument("--number-of-elements", default=2500, type=int) # Number of unique integers
+        parser.add_argument("--number-of-copies", default=2, type=int) # Synonym grupper
+        parser.add_argument("--no-clauses-output", dest="clauses_output", action="store_false")
+        parser.add_argument("--noise", default=0.0, type=float)
+        args = parser.parse_args()
+        for key, value in kwargs.items():
+                if key in args.__dict__:
+                        setattr(args, key, value)
+        return args
 
 args = default_args()
 
@@ -36,7 +52,7 @@ MAX_NGRAM = 2
 NUM_WORDS=5000
 INDEX_FROM=2 
 
-FEATURES = args.number_of_elements*2 # Features are double the number of elements, since we have two inputs
+FEATURES = args.number_of_elements*2 # Features are double the number of elements
 
 print("Downloading dataset...")
 
@@ -128,9 +144,9 @@ selected_features = SKB.get_support(indices=True)
 
 selected_phrases = [bit_nr_phrase[int(original_bit)] for original_bit in selected_features]
 
-print("Selected words ngrams used by the Tsetlin Machine:")
-for tm_feature_nr, phrase in enumerate(selected_phrases):
-    print("%3d -> %s" % (tm_feature_nr, phrase))
+#print("Selected words ngrams used by the Tsetlin Machine:")
+#or tm_feature_nr, phrase in enumerate(selected_phrases):
+ #   print("%3d -> %s" % (tm_feature_nr, phrase))
 
 X_train = SKB.transform(X_train)
 X_test = SKB.transform(X_test)
@@ -146,7 +162,7 @@ tm = MultiClassTsetlinMachine(
                 (htm.OR_ALTERNATIVES, args.number_of_alternatives), # The second layer is an OR group that takes the output of the first layer
                 (htm.AND_ALTERNATIVES, args.number_of_copies) # The third layer is an AND group that takes the output of the second layer and creates copies
 	),
-	append_negated=False
+	append_negated=True
 )
 
 # Store results (including the rules of the clauses) for each epoch
@@ -163,25 +179,12 @@ for e in range(args.epochs):
         stop_testing = time()
 
         print("#%d Accuracy: %.2f%% Training: %.2fs Testing: %.2fs" % (e+1, result, stop_training-start_training, stop_testing-start_testing))
-        #tm.print_hierarchy()
 
         # Print hierarchy structure with the names of the selected phrases
         tm.print_hierarchy(feature_names=selected_phrases)
 
-        # Store results with accuracy and rules in the clauses for each epoch
-        results[e] = {
-                "accuracy": result,
-                "clauses": tm.print_hierarchy(feature_names=selected_phrases)
-        }
-
-        # Save results to a file
-        with open(f"results_{args.T}_{args.s}_{args.number_of_copies}.txt", "w") as f:
-            for epoch, epoch_results in results.items():
-                f.write(f"Epoch {epoch + 1}:\n")
-                f.write(f"Accuracy: {epoch_results['accuracy']:.2f}%\n")
-                f.write("Clauses:\n")
-                for clause in epoch_results['clauses']:
-                    f.write(f"  {clause}\n")
-                f.write("\n")
-
-        print("----------------------------------------------------------------------------------------------")
+        if args.clauses_output is None:
+                args.clauses_output = make_default_clauses_output_path(args)
+                continue
+            
+print("----------------------------------------------------------------------------------------------")
