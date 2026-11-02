@@ -33,7 +33,8 @@ def default_args(**kwargs):
         parser.add_argument("--number-of-clauses", default=2, type=int)
         parser.add_argument("--number-of-examples", default=10000, type=int) # Number of training and testing examples
         parser.add_argument("--T", default=1000, type=int)
-        parser.add_argument("--s", default=15.0, type=float)
+        parser.add_argument("--s", default=10.0, type=float)
+        parser.add_argument("--literal-budget", default=10, type=int) # Number of literals in the first layer of the hierarchy
         parser.add_argument("--number-of-alternatives", default=100, type=int) # Number of alternatives in the second layer of the hierarchy
         parser.add_argument("--number-of-elements", default=2500, type=int) # Number of unique integers
         parser.add_argument("--number-of-copies", default=2, type=int) # Synonym grupper
@@ -156,6 +157,7 @@ tm = MultiClassTsetlinMachine(
 	args.T,
 	args.s,
 	number_of_state_bits=8,
+        literal_budget=args.literal_budget,
 	boost_true_positive_feedback=0,
 	hierarchy_structure=(
                 (htm.AND_GROUP, FEATURES), # The first layer is an AND group that takes the input features
