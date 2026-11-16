@@ -1,0 +1,576 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1793968655.984177  614692 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[I 2026-11-06 13:38:18,090] Using an existing study with `study_name='imdb_htm_optimization'` instead of creating a new one.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 13:43:22,538] Trial 25 finished with value: 74.42 and parameters: {'T': 395, 's': 17.258945825675436, 'literal_budget': 43, 'number_of_alternatives': 493}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 13:48:51,350] Trial 26 finished with value: 50.13999999999999 and parameters: {'T': 106, 's': 11.706592531760258, 'literal_budget': 39, 'number_of_alternatives': 466}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 13:54:13,539] Trial 27 finished with value: 50.0 and parameters: {'T': 144, 's': 6.00688136032245, 'literal_budget': 50, 'number_of_alternatives': 253}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 13:59:54,618] Trial 28 finished with value: 50.0 and parameters: {'T': 121, 's': 5.40305928491336, 'literal_budget': 49, 'number_of_alternatives': 597}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:05:50,940] Trial 29 finished with value: 50.0 and parameters: {'T': 198, 's': 6.249863360797829, 'literal_budget': 43, 'number_of_alternatives': 840}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:11:42,793] Trial 30 finished with value: 50.03999999999999 and parameters: {'T': 262, 's': 9.211035983623471, 'literal_budget': 40, 'number_of_alternatives': 933}. Best is trial 23 with value: 82.17999999999999.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:16:39,399] Trial 31 finished with value: 83.32000000000001 and parameters: {'T': 103, 's': 17.763183499802608, 'literal_budget': 36, 'number_of_alternatives': 150}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:21:34,647] Trial 32 finished with value: 62.480000000000004 and parameters: {'T': 214, 's': 16.110526805587916, 'literal_budget': 30, 'number_of_alternatives': 304}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:27:03,846] Trial 33 finished with value: 50.519999999999996 and parameters: {'T': 178, 's': 14.135445920723448, 'literal_budget': 43, 'number_of_alternatives': 716}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:32:15,658] Trial 34 finished with value: 68.22 and parameters: {'T': 140, 's': 14.916030132326066, 'literal_budget': 36, 'number_of_alternatives': 178}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:38:01,562] Trial 35 finished with value: 76.28 and parameters: {'T': 141, 's': 15.743810233899355, 'literal_budget': 43, 'number_of_alternatives': 91}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:43:44,826] Trial 36 finished with value: 50.0 and parameters: {'T': 284, 's': 6.885994108575948, 'literal_budget': 49, 'number_of_alternatives': 467}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:48:24,567] Trial 37 finished with value: 50.019999999999996 and parameters: {'T': 100, 's': 10.697012433462737, 'literal_budget': 36, 'number_of_alternatives': 186}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:53:48,236] Trial 38 finished with value: 50.0 and parameters: {'T': 139, 's': 7.7067638782425885, 'literal_budget': 42, 'number_of_alternatives': 336}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 14:59:16,383] Trial 39 finished with value: 50.36000000000001 and parameters: {'T': 178, 's': 11.478152812024609, 'literal_budget': 32, 'number_of_alternatives': 655}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:04:49,331] Trial 40 finished with value: 50.0 and parameters: {'T': 104, 's': 8.203080741505625, 'literal_budget': 32, 'number_of_alternatives': 523}. Best is trial 31 with value: 83.32000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+Downloading dataset...
+Producing bit representation...
+Selecting features...
+Trial 25, epoch 1: validation accuracy = 76.36%
+Trial 25, epoch 2: validation accuracy = 50.78%
+Trial 25, epoch 3: validation accuracy = 60.28%
+Trial 25, epoch 4: validation accuracy = 68.12%
+Trial 25, epoch 5: validation accuracy = 82.26%
+Trial 25, epoch 6: validation accuracy = 61.34%
+Trial 25, epoch 7: validation accuracy = 51.96%
+Trial 25, epoch 8: validation accuracy = 57.32%
+Trial 25, epoch 9: validation accuracy = 64.44%
+Trial 25, epoch 10: validation accuracy = 74.42%
+Trial 26, epoch 1: validation accuracy = 50.04%
+Trial 26, epoch 2: validation accuracy = 50.18%
+Trial 26, epoch 3: validation accuracy = 51.02%
+Trial 26, epoch 4: validation accuracy = 50.38%
+Trial 26, epoch 5: validation accuracy = 50.30%
+Trial 26, epoch 6: validation accuracy = 50.16%
+Trial 26, epoch 7: validation accuracy = 50.64%
+Trial 26, epoch 8: validation accuracy = 50.64%
+Trial 26, epoch 9: validation accuracy = 50.24%
+Trial 26, epoch 10: validation accuracy = 50.14%
+Trial 27, epoch 1: validation accuracy = 50.00%
+Trial 27, epoch 2: validation accuracy = 50.00%
+Trial 27, epoch 3: validation accuracy = 50.00%
+Trial 27, epoch 4: validation accuracy = 50.00%
+Trial 27, epoch 5: validation accuracy = 50.00%
+Trial 27, epoch 6: validation accuracy = 50.00%
+Trial 27, epoch 7: validation accuracy = 50.00%
+Trial 27, epoch 8: validation accuracy = 50.00%
+Trial 27, epoch 9: validation accuracy = 50.00%
+Trial 27, epoch 10: validation accuracy = 50.00%
+Trial 28, epoch 1: validation accuracy = 50.00%
+Trial 28, epoch 2: validation accuracy = 50.00%
+Trial 28, epoch 3: validation accuracy = 50.00%
+Trial 28, epoch 4: validation accuracy = 50.00%
+Trial 28, epoch 5: validation accuracy = 50.00%
+Trial 28, epoch 6: validation accuracy = 50.00%
+Trial 28, epoch 7: validation accuracy = 50.00%
+Trial 28, epoch 8: validation accuracy = 50.00%
+Trial 28, epoch 9: validation accuracy = 50.00%
+Trial 28, epoch 10: validation accuracy = 50.00%
+Trial 29, epoch 1: validation accuracy = 50.00%
+Trial 29, epoch 2: validation accuracy = 50.00%
+Trial 29, epoch 3: validation accuracy = 50.00%
+Trial 29, epoch 4: validation accuracy = 50.00%
+Trial 29, epoch 5: validation accuracy = 50.00%
+Trial 29, epoch 6: validation accuracy = 50.00%
+Trial 29, epoch 7: validation accuracy = 50.00%
+Trial 29, epoch 8: validation accuracy = 50.00%
+Trial 29, epoch 9: validation accuracy = 50.00%
+Trial 29, epoch 10: validation accuracy = 50.00%
+Trial 30, epoch 1: validation accuracy = 50.00%
+Trial 30, epoch 2: validation accuracy = 50.00%
+Trial 30, epoch 3: validation accuracy = 50.00%
+Trial 30, epoch 4: validation accuracy = 50.00%
+Trial 30, epoch 5: validation accuracy = 50.00%
+Trial 30, epoch 6: validation accuracy = 50.00%
+Trial 30, epoch 7: validation accuracy = 50.00%
+Trial 30, epoch 8: validation accuracy = 50.00%
+Trial 30, epoch 9: validation accuracy = 50.00%
+Trial 30, epoch 10: validation accuracy = 50.04%
+Trial 31, epoch 1: validation accuracy = 77.40%
+Trial 31, epoch 2: validation accuracy = 73.26%
+Trial 31, epoch 3: validation accuracy = 83.98%
+Trial 31, epoch 4: validation accuracy = 58.04%
+Trial 31, epoch 5: validation accuracy = 59.88%
+Trial 31, epoch 6: validation accuracy = 69.28%
+Trial 31, epoch 7: validation accuracy = 70.48%
+Trial 31, epoch 8: validation accuracy = 81.10%
+Trial 31, epoch 9: validation accuracy = 81.70%
+Trial 31, epoch 10: validation accuracy = 83.32%
+Trial 32, epoch 1: validation accuracy = 80.34%
+Trial 32, epoch 2: validation accuracy = 53.12%
+Trial 32, epoch 3: validation accuracy = 77.76%
+Trial 32, epoch 4: validation accuracy = 58.44%
+Trial 32, epoch 5: validation accuracy = 62.34%
+Trial 32, epoch 6: validation accuracy = 65.30%
+Trial 32, epoch 7: validation accuracy = 55.34%
+Trial 32, epoch 8: validation accuracy = 53.66%
+Trial 32, epoch 9: validation accuracy = 60.62%
+Trial 32, epoch 10: validation accuracy = 62.48%
+Trial 33, epoch 1: validation accuracy = 50.10%
+Trial 33, epoch 2: validation accuracy = 50.34%
+Trial 33, epoch 3: validation accuracy = 50.46%
+Trial 33, epoch 4: validation accuracy = 50.38%
+Trial 33, epoch 5: validation accuracy = 51.90%
+Trial 33, epoch 6: validation accuracy = 51.00%
+Trial 33, epoch 7: validation accuracy = 50.64%
+Trial 33, epoch 8: validation accuracy = 50.94%
+Trial 33, epoch 9: validation accuracy = 50.46%
+Trial 33, epoch 10: validation accuracy = 50.52%
+Trial 34, epoch 1: validation accuracy = 50.76%
+Trial 34, epoch 2: validation accuracy = 74.92%
+Trial 34, epoch 3: validation accuracy = 80.88%
+Trial 34, epoch 4: validation accuracy = 66.46%
+Trial 34, epoch 5: validation accuracy = 60.84%
+Trial 34, epoch 6: validation accuracy = 81.56%
+Trial 34, epoch 7: validation accuracy = 76.18%
+Trial 34, epoch 8: validation accuracy = 64.12%
+Trial 34, epoch 9: validation accuracy = 60.34%
+Trial 34, epoch 10: validation accuracy = 68.22%
+Trial 35, epoch 1: validation accuracy = 75.08%
+Trial 35, epoch 2: validation accuracy = 81.76%
+Trial 35, epoch 3: validation accuracy = 80.42%
+Trial 35, epoch 4: validation accuracy = 81.14%
+Trial 35, epoch 5: validation accuracy = 76.78%
+Trial 35, epoch 6: validation accuracy = 78.00%
+Trial 35, epoch 7: validation accuracy = 83.12%
+Trial 35, epoch 8: validation accuracy = 82.60%
+Trial 35, epoch 9: validation accuracy = 83.24%
+Trial 35, epoch 10: validation accuracy = 76.28%
+Trial 36, epoch 1: validation accuracy = 50.00%
+Trial 36, epoch 2: validation accuracy = 50.00%
+Trial 36, epoch 3: validation accuracy = 50.00%
+Trial 36, epoch 4: validation accuracy = 50.00%
+Trial 36, epoch 5: validation accuracy = 50.00%
+Trial 36, epoch 6: validation accuracy = 50.00%
+Trial 36, epoch 7: validation accuracy = 50.00%
+Trial 36, epoch 8: validation accuracy = 50.00%
+Trial 36, epoch 9: validation accuracy = 50.00%
+Trial 36, epoch 10: validation accuracy = 50.00%
+Trial 37, epoch 1: validation accuracy = 50.00%
+Trial 37, epoch 2: validation accuracy = 50.24%
+Trial 37, epoch 3: validation accuracy = 50.00%
+Trial 37, epoch 4: validation accuracy = 50.00%
+Trial 37, epoch 5: validation accuracy = 50.00%
+Trial 37, epoch 6: validation accuracy = 50.30%
+Trial 37, epoch 7: validation accuracy = 50.12%
+Trial 37, epoch 8: validation accuracy = 50.14%
+Trial 37, epoch 9: validation accuracy = 50.44%
+Trial 37, epoch 10: validation accuracy = 50.02%
+Trial 38, epoch 1: validation accuracy = 50.00%
+Trial 38, epoch 2: validation accuracy = 50.00%
+Trial 38, epoch 3: validation accuracy = 50.00%
+Trial 38, epoch 4: validation accuracy = 50.00%
+Trial 38, epoch 5: validation accuracy = 50.00%
+Trial 38, epoch 6: validation accuracy = 50.00%
+Trial 38, epoch 7: validation accuracy = 50.00%
+Trial 38, epoch 8: validation accuracy = 50.00%
+Trial 38, epoch 9: validation accuracy = 50.00%
+Trial 38, epoch 10: validation accuracy = 50.00%
+Trial 39, epoch 1: validation accuracy = 50.00%
+Trial 39, epoch 2: validation accuracy = 50.08%
+Trial 39, epoch 3: validation accuracy = 50.18%
+Trial 39, epoch 4: validation accuracy = 50.18%
+Trial 39, epoch 5: validation accuracy = 50.06%
+Trial 39, epoch 6: validation accuracy = 50.16%
+Trial 39, epoch 7: validation accuracy = 50.10%
+Trial 39, epoch 8: validation accuracy = 50.64%
+Trial 39, epoch 9: validation accuracy = 50.16%
+Trial 39, epoch 10: validation accuracy = 50.36%
+Trial 40, epoch 1: validation accuracy = 50.00%
+Trial 40, epoch 2: validation accuracy = 50.00%
+Trial 40, epoch 3: validation accuracy = 50.00%
+Trial 40, epoch 4: validation accuracy = 50.00%
+Trial 40, epoch 5: validation accuracy = 50.00%
+Trial 40, epoch 6: validation accuracy = 50.00%
+Trial 40, epoch 7: validation accuracy = 50.00%
+Trial 40, epoch 8: validation accuracy = 50.00%
+Trial 40, epoch 9: validation accuracy = 50.24%
+Trial 40, epoch 10: validation accuracy = 50.00%
+Trial 41, epoch 1: validation accuracy = 79.10%
+Trial 41, epoch 2: validation accuracy = 63.12%
+Trial 41, epoch 3: validation accuracy = 75.02%
+Trial 41, epoch 4: validation accuracy = 64.28%
+Trial 41, epoch 5: validation accuracy = 77.54%
+Trial 41, epoch 6: validation accuracy = 75.10%
+Trial 41, epoch 7: validation accuracy = 74.56%
+Trial 41, epoch 8: validation accuracy = 56.44%
+Trial 41, epoch 9: validation accuracy = 82.56%[I 2026-11-06 15:09:57,069] Trial 41 finished with value: 84.96000000000001 and parameters: {'T': 107, 's': 21.650815546230355, 'literal_budget': 39, 'number_of_alternatives': 195}. Best is trial 41 with value: 84.96000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:14:58,806] Trial 42 finished with value: 84.68 and parameters: {'T': 127, 's': 20.279689842546617, 'literal_budget': 39, 'number_of_alternatives': 235}. Best is trial 41 with value: 84.96000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:20:16,814] Trial 43 finished with value: 81.84 and parameters: {'T': 108, 's': 22.118860980124417, 'literal_budget': 38, 'number_of_alternatives': 87}. Best is trial 41 with value: 84.96000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:25:08,367] Trial 44 finished with value: 60.58 and parameters: {'T': 106, 's': 14.847373316630204, 'literal_budget': 31, 'number_of_alternatives': 222}. Best is trial 41 with value: 84.96000000000001.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:29:57,294] Trial 45 finished with value: 86.08 and parameters: {'T': 127, 's': 21.940741506540938, 'literal_budget': 34, 'number_of_alternatives': 236}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:34:37,086] Trial 46 finished with value: 60.6 and parameters: {'T': 108, 's': 17.60848761138803, 'literal_budget': 40, 'number_of_alternatives': 246}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:39:46,606] Trial 47 finished with value: 83.12 and parameters: {'T': 131, 's': 25.110950055503906, 'literal_budget': 39, 'number_of_alternatives': 163}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:157: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_prepare = SourceModule(parameters + kernels.code_header + kernels.code_prepare, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:44:56,864] Trial 48 finished with value: 83.88 and parameters: {'T': 119, 's': 28.04832277032076, 'literal_budget': 33, 'number_of_alternatives': 149}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-06 15:50:02,508] Trial 49 finished with value: 69.84 and parameters: {'T': 181, 's': 18.01660484554082, 'literal_budget': 30, 'number_of_alternatives': 193}. Best is trial 45 with value: 86.08.
+
+Trial 41, epoch 10: validation accuracy = 84.96%
+Trial 42, epoch 1: validation accuracy = 71.80%
+Trial 42, epoch 2: validation accuracy = 63.36%
+Trial 42, epoch 3: validation accuracy = 82.64%
+Trial 42, epoch 4: validation accuracy = 83.52%
+Trial 42, epoch 5: validation accuracy = 64.66%
+Trial 42, epoch 6: validation accuracy = 76.34%
+Trial 42, epoch 7: validation accuracy = 56.46%
+Trial 42, epoch 8: validation accuracy = 83.76%
+Trial 42, epoch 9: validation accuracy = 69.46%
+Trial 42, epoch 10: validation accuracy = 84.68%
+Trial 43, epoch 1: validation accuracy = 66.32%
+Trial 43, epoch 2: validation accuracy = 80.36%
+Trial 43, epoch 3: validation accuracy = 81.38%
+Trial 43, epoch 4: validation accuracy = 81.10%
+Trial 43, epoch 5: validation accuracy = 80.90%
+Trial 43, epoch 6: validation accuracy = 81.06%
+Trial 43, epoch 7: validation accuracy = 82.38%
+Trial 43, epoch 8: validation accuracy = 82.12%
+Trial 43, epoch 9: validation accuracy = 82.56%
+Trial 43, epoch 10: validation accuracy = 81.84%
+Trial 44, epoch 1: validation accuracy = 50.46%
+Trial 44, epoch 2: validation accuracy = 76.76%
+Trial 44, epoch 3: validation accuracy = 50.54%
+Trial 44, epoch 4: validation accuracy = 50.68%
+Trial 44, epoch 5: validation accuracy = 59.90%
+Trial 44, epoch 6: validation accuracy = 55.74%
+Trial 44, epoch 7: validation accuracy = 58.86%
+Trial 44, epoch 8: validation accuracy = 51.06%
+Trial 44, epoch 9: validation accuracy = 50.60%
+Trial 44, epoch 10: validation accuracy = 60.58%
+Trial 45, epoch 1: validation accuracy = 56.34%
+Trial 45, epoch 2: validation accuracy = 83.18%
+Trial 45, epoch 3: validation accuracy = 59.36%
+Trial 45, epoch 4: validation accuracy = 72.28%
+Trial 45, epoch 5: validation accuracy = 84.52%
+Trial 45, epoch 6: validation accuracy = 55.40%
+Trial 45, epoch 7: validation accuracy = 70.74%
+Trial 45, epoch 8: validation accuracy = 81.84%
+Trial 45, epoch 9: validation accuracy = 85.36%
+Trial 45, epoch 10: validation accuracy = 86.08%
+Trial 46, epoch 1: validation accuracy = 50.96%
+Trial 46, epoch 2: validation accuracy = 54.06%
+Trial 46, epoch 3: validation accuracy = 71.66%
+Trial 46, epoch 4: validation accuracy = 81.72%
+Trial 46, epoch 5: validation accuracy = 80.36%
+Trial 46, epoch 6: validation accuracy = 51.86%
+Trial 46, epoch 7: validation accuracy = 51.08%
+Trial 46, epoch 8: validation accuracy = 52.70%
+Trial 46, epoch 9: validation accuracy = 54.54%
+Trial 46, epoch 10: validation accuracy = 60.60%
+Trial 47, epoch 1: validation accuracy = 57.16%
+Trial 47, epoch 2: validation accuracy = 65.56%
+Trial 47, epoch 3: validation accuracy = 77.22%
+Trial 47, epoch 4: validation accuracy = 71.08%
+Trial 47, epoch 5: validation accuracy = 82.58%
+Trial 47, epoch 6: validation accuracy = 68.42%
+Trial 47, epoch 7: validation accuracy = 74.70%
+Trial 47, epoch 8: validation accuracy = 81.38%
+Trial 47, epoch 9: validation accuracy = 80.08%
+Trial 47, epoch 10: validation accuracy = 83.12%
+Trial 48, epoch 1: validation accuracy = 80.32%
+Trial 48, epoch 2: validation accuracy = 65.16%
+Trial 48, epoch 3: validation accuracy = 81.92%
+Trial 48, epoch 4: validation accuracy = 74.66%
+Trial 48, epoch 5: validation accuracy = 82.42%
+Trial 48, epoch 6: validation accuracy = 80.22%
+Trial 48, epoch 7: validation accuracy = 83.04%
+Trial 48, epoch 8: validation accuracy = 79.62%
+Trial 48, epoch 9: validation accuracy = 84.34%
+Trial 48, epoch 10: validation accuracy = 83.88%
+Trial 49, epoch 1: validation accuracy = 63.20%
+Trial 49, epoch 2: validation accuracy = 62.82%
+Trial 49, epoch 3: validation accuracy = 63.80%
+Trial 49, epoch 4: validation accuracy = 65.56%
+Trial 49, epoch 5: validation accuracy = 77.22%
+Trial 49, epoch 6: validation accuracy = 77.20%
+Trial 49, epoch 7: validation accuracy = 75.80%
+Trial 49, epoch 8: validation accuracy = 84.78%
+Trial 49, epoch 9: validation accuracy = 69.14%
+Trial 49, epoch 10: validation accuracy = 69.84%
+Best validation accuracy: 86.08
+Best parameters: {'T': 127, 's': 21.940741506540938, 'literal_budget': 34, 'number_of_alternatives': 236}
