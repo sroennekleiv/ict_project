@@ -17,34 +17,20 @@ import PyHierarchicalTsetlinMachineCUDA.tm as htm
 
 import argparse
 
-def format_parameter(value):
-	text = ("%g" % value) if isinstance(value, float) else str(value)
-	return text.replace("-", "m").replace(".", "p")
-
-
-def make_default_clauses_output_path(args):
-	timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-	return "imdb_htm_s%s_T%s_alt%s_%s.txt" % (
-		format_parameter(args.s),
-		format_parameter(args.T),
-		format_parameter(args.number_of_alternatives),
-		timestamp,
-	)
-
 def default_args(**kwargs):
         parser = argparse.ArgumentParser()
         parser.add_argument("--epochs", default=10, type=int)
         parser.add_argument("--number-of-clauses", default=2, type=int)
         parser.add_argument("--number-of-examples", default=10000, type=int) # Number of training and testing examples
-        parser.add_argument("--T", default=812, type=int)
-        parser.add_argument("--s", default=19.74054, type=float)
-        parser.add_argument("--literal-budget", default=20, type=int) # Number of literals in the first layer of the hierarchy
-        parser.add_argument("--number-of-alternatives", default=617, type=int) # Number of alternatives in the second layer of the hierarchy
+        parser.add_argument("--T", default=127, type=int)
+        parser.add_argument("--s", default=21.94, type=float)
+        parser.add_argument("--literal-budget", default=34, type=int) # Number of literals in the first layer of the hierarchy
+        parser.add_argument("--number-of-alternatives", default=236, type=int) # Number of alternatives in the second layer of the hierarchy
         parser.add_argument("--number-of-elements", default=2500, type=int) # Number of unique integers
         parser.add_argument("--number-of-copies", default=1, type=int) # Synonym grupper
         parser.add_argument("--noise", default=0.0, type=float)
         parser.add_argument("--optuna-search", action="store_true")
-        parser.add_argument("--trials", default=20, type=int)
+        parser.add_argument("--trials", default=25, type=int)
         args = parser.parse_args()
         for key, value in kwargs.items():
                 if key in args.__dict__:
@@ -168,12 +154,14 @@ X_test = SKB.transform(X_test)
 
 if args.optuna_search:
         def objective(trial):
+                #T=127
+                s=21.94
+                alternatives=236
+                literal_budget=35
                 T = trial.suggest_int("T", 100, 4000, log=True)
-                s = trial.suggest_float("s", 2.0, 30.0, log=True)
-                literal_budget = trial.suggest_int("literal_budget", 2, 50)
-                alternatives = trial.suggest_int(
-                        "number_of_alternatives", 10, 1000, log=True
-                )
+                #s = trial.suggest_float("s", 2.0, 30.0, log=True)
+                #literal_budget = trial.suggest_int("literal_budget", 2, 50)
+                #alternatives = trial.suggest_int("number_of_alternatives", 10, 1000, log=True)
 
                 model = MultiClassTsetlinMachine(
                         args.number_of_clauses,
@@ -202,7 +190,7 @@ if args.optuna_search:
 
         study = optuna.create_study(
                 study_name="imdb_htm_optimization",
-                storage="sqlite:///imdb_htm_optimization.db",
+                storage="sqlite:///imdb_htm_optimization_copy1.db",
                 load_if_exists=True,
                 direction="maximize",
                 sampler=optuna.samplers.TPESampler(seed=42),

@@ -1,0 +1,372 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1794842701.027460   62831 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+[I 2026-11-16 15:25:37,698] Using an existing study with `study_name='imdb_htm_optimization'` instead of creating a new one.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:29:48,489] Trial 166 finished with value: 83.17999999999999 and parameters: {'literal_budget': 33}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:33:58,707] Trial 167 finished with value: 72.6 and parameters: {'literal_budget': 26}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:38:06,902] Trial 168 finished with value: 85.36 and parameters: {'literal_budget': 36}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:42:16,428] Trial 169 finished with value: 76.94 and parameters: {'literal_budget': 37}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:46:26,726] Trial 170 finished with value: 83.26 and parameters: {'literal_budget': 28}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:50:37,121] Trial 171 finished with value: 74.42 and parameters: {'literal_budget': 20}. Best is trial 45 with value: 86.08.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:54:46,446] Trial 172 finished with value: 86.2 and parameters: {'literal_budget': 35}. Best is trial 172 with value: 86.2.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 15:58:57,820] Trial 173 finished with value: 64.44 and parameters: {'literal_budget': 5}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:03:07,664] Trial 174 finished with value: 84.58 and parameters: {'literal_budget': 37}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:07:15,651] Trial 175 finished with value: 85.84 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:11:24,169] Trial 176 finished with value: 73.28 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 16:15:35,663] Trial 177 finished with value: 66.44 and parameters: {'literal_budget': 34}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:19:44,489] Trial 178 finished with value: 83.26 and parameters: {'literal_budget': 35}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:23:53,479] Trial 179 finished with value: 56.220000000000006 and parameters: {'literal_budget': 37}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:28:02,654] Trial 180 finished with value: 85.16 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:32:12,426] Trial 181 finished with value: 85.06 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+Downloading dataset...
+Producing bit representation...
+Selecting features...
+Trial 166, epoch 1: validation accuracy = 67.74%
+Trial 166, epoch 2: validation accuracy = 80.16%
+Trial 166, epoch 3: validation accuracy = 58.14%
+Trial 166, epoch 4: validation accuracy = 63.22%
+Trial 166, epoch 5: validation accuracy = 73.22%
+Trial 166, epoch 6: validation accuracy = 71.28%
+Trial 166, epoch 7: validation accuracy = 82.62%
+Trial 166, epoch 8: validation accuracy = 61.16%
+Trial 166, epoch 9: validation accuracy = 79.12%
+Trial 166, epoch 10: validation accuracy = 83.18%
+Trial 167, epoch 1: validation accuracy = 72.44%
+Trial 167, epoch 2: validation accuracy = 60.68%
+Trial 167, epoch 3: validation accuracy = 79.84%
+Trial 167, epoch 4: validation accuracy = 68.46%
+Trial 167, epoch 5: validation accuracy = 78.68%
+Trial 167, epoch 6: validation accuracy = 76.48%
+Trial 167, epoch 7: validation accuracy = 85.72%
+Trial 167, epoch 8: validation accuracy = 66.18%
+Trial 167, epoch 9: validation accuracy = 79.18%
+Trial 167, epoch 10: validation accuracy = 72.60%
+Trial 168, epoch 1: validation accuracy = 76.48%
+Trial 168, epoch 2: validation accuracy = 81.42%
+Trial 168, epoch 3: validation accuracy = 82.24%
+Trial 168, epoch 4: validation accuracy = 77.98%
+Trial 168, epoch 5: validation accuracy = 75.90%
+Trial 168, epoch 6: validation accuracy = 86.00%
+Trial 168, epoch 7: validation accuracy = 86.30%
+Trial 168, epoch 8: validation accuracy = 73.44%
+Trial 168, epoch 9: validation accuracy = 82.10%
+Trial 168, epoch 10: validation accuracy = 85.36%
+Trial 169, epoch 1: validation accuracy = 54.74%
+Trial 169, epoch 2: validation accuracy = 71.08%
+Trial 169, epoch 3: validation accuracy = 58.54%
+Trial 169, epoch 4: validation accuracy = 65.44%
+Trial 169, epoch 5: validation accuracy = 63.60%
+Trial 169, epoch 6: validation accuracy = 82.98%
+Trial 169, epoch 7: validation accuracy = 70.28%
+Trial 169, epoch 8: validation accuracy = 82.50%
+Trial 169, epoch 9: validation accuracy = 83.92%
+Trial 169, epoch 10: validation accuracy = 76.94%
+Trial 170, epoch 1: validation accuracy = 68.34%
+Trial 170, epoch 2: validation accuracy = 83.42%
+Trial 170, epoch 3: validation accuracy = 61.18%
+Trial 170, epoch 4: validation accuracy = 81.94%
+Trial 170, epoch 5: validation accuracy = 60.22%
+Trial 170, epoch 6: validation accuracy = 82.72%
+Trial 170, epoch 7: validation accuracy = 60.50%
+Trial 170, epoch 8: validation accuracy = 76.54%
+Trial 170, epoch 9: validation accuracy = 69.70%
+Trial 170, epoch 10: validation accuracy = 83.26%
+Trial 171, epoch 1: validation accuracy = 51.54%
+Trial 171, epoch 2: validation accuracy = 62.12%
+Trial 171, epoch 3: validation accuracy = 66.26%
+Trial 171, epoch 4: validation accuracy = 74.02%
+Trial 171, epoch 5: validation accuracy = 84.34%
+Trial 171, epoch 6: validation accuracy = 84.20%
+Trial 171, epoch 7: validation accuracy = 81.90%
+Trial 171, epoch 8: validation accuracy = 77.80%
+Trial 171, epoch 9: validation accuracy = 71.24%
+Trial 171, epoch 10: validation accuracy = 74.42%
+Trial 172, epoch 1: validation accuracy = 62.88%
+Trial 172, epoch 2: validation accuracy = 80.50%
+Trial 172, epoch 3: validation accuracy = 84.72%
+Trial 172, epoch 4: validation accuracy = 85.36%
+Trial 172, epoch 5: validation accuracy = 76.20%
+Trial 172, epoch 6: validation accuracy = 85.96%
+Trial 172, epoch 7: validation accuracy = 85.50%
+Trial 172, epoch 8: validation accuracy = 75.56%
+Trial 172, epoch 9: validation accuracy = 85.40%
+Trial 172, epoch 10: validation accuracy = 86.20%
+Trial 173, epoch 1: validation accuracy = 80.74%
+Trial 173, epoch 2: validation accuracy = 76.48%
+Trial 173, epoch 3: validation accuracy = 55.34%
+Trial 173, epoch 4: validation accuracy = 62.50%
+Trial 173, epoch 5: validation accuracy = 54.80%
+Trial 173, epoch 6: validation accuracy = 74.38%
+Trial 173, epoch 7: validation accuracy = 74.18%
+Trial 173, epoch 8: validation accuracy = 69.74%
+Trial 173, epoch 9: validation accuracy = 75.08%
+Trial 173, epoch 10: validation accuracy = 64.44%
+Trial 174, epoch 1: validation accuracy = 50.40%
+Trial 174, epoch 2: validation accuracy = 66.20%
+Trial 174, epoch 3: validation accuracy = 85.12%
+Trial 174, epoch 4: validation accuracy = 85.34%
+Trial 174, epoch 5: validation accuracy = 80.76%
+Trial 174, epoch 6: validation accuracy = 65.04%
+Trial 174, epoch 7: validation accuracy = 76.26%
+Trial 174, epoch 8: validation accuracy = 85.08%
+Trial 174, epoch 9: validation accuracy = 72.30%
+Trial 174, epoch 10: validation accuracy = 84.58%
+Trial 175, epoch 1: validation accuracy = 55.30%
+Trial 175, epoch 2: validation accuracy = 73.70%
+Trial 175, epoch 3: validation accuracy = 72.48%
+Trial 175, epoch 4: validation accuracy = 81.70%
+Trial 175, epoch 5: validation accuracy = 84.88%
+Trial 175, epoch 6: validation accuracy = 56.30%
+Trial 175, epoch 7: validation accuracy = 74.38%
+Trial 175, epoch 8: validation accuracy = 81.76%
+Trial 175, epoch 9: validation accuracy = 76.94%
+Trial 175, epoch 10: validation accuracy = 85.84%
+Trial 176, epoch 1: validation accuracy = 72.30%
+Trial 176, epoch 2: validation accuracy = 56.38%
+Trial 176, epoch 3: validation accuracy = 65.20%
+Trial 176, epoch 4: validation accuracy = 84.44%
+Trial 176, epoch 5: validation accuracy = 65.26%
+Trial 176, epoch 6: validation accuracy = 61.58%
+Trial 176, epoch 7: validation accuracy = 84.48%
+Trial 176, epoch 8: validation accuracy = 72.08%
+Trial 176, epoch 9: validation accuracy = 77.64%
+Trial 176, epoch 10: validation accuracy = 73.28%
+Trial 177, epoch 1: validation accuracy = 50.50%
+Trial 177, epoch 2: validation accuracy = 65.30%
+Trial 177, epoch 3: validation accuracy = 84.08%
+Trial 177, epoch 4: validation accuracy = 79.36%
+Trial 177, epoch 5: validation accuracy = 70.38%
+Trial 177, epoch 6: validation accuracy = 82.60%
+Trial 177, epoch 7: validation accuracy = 85.30%
+Trial 177, epoch 8: validation accuracy = 85.02%
+Trial 177, epoch 9: validation accuracy = 69.74%
+Trial 177, epoch 10: validation accuracy = 66.44%
+Trial 178, epoch 1: validation accuracy = 73.12%
+Trial 178, epoch 2: validation accuracy = 57.22%
+Trial 178, epoch 3: validation accuracy = 64.16%
+Trial 178, epoch 4: validation accuracy = 84.72%
+Trial 178, epoch 5: validation accuracy = 75.16%
+Trial 178, epoch 6: validation accuracy = 82.56%
+Trial 178, epoch 7: validation accuracy = 79.82%
+Trial 178, epoch 8: validation accuracy = 81.88%
+Trial 178, epoch 9: validation accuracy = 75.46%
+Trial 178, epoch 10: validation accuracy = 83.26%
+Trial 179, epoch 1: validation accuracy = 76.74%
+Trial 179, epoch 2: validation accuracy = 81.38%
+Trial 179, epoch 3: validation accuracy = 67.08%
+Trial 179, epoch 4: validation accuracy = 58.82%
+Trial 179, epoch 5: validation accuracy = 68.84%
+Trial 179, epoch 6: validation accuracy = 64.70%
+Trial 179, epoch 7: validation accuracy = 78.98%
+Trial 179, epoch 8: validation accuracy = 85.62%
+Trial 179, epoch 9: validation accuracy = 80.56%
+Trial 179, epoch 10: validation accuracy = 56.22%
+Trial 180, epoch 1: validation accuracy = 77.28%
+Trial 180, epoch 2: validation accuracy = 63.82%
+Trial 180, epoch 3: validation accuracy = 77.72%
+Trial 180, epoch 4: validation accuracy = 83.16%
+Trial 180, epoch 5: validation accuracy = 76.00%
+Trial 180, epoch 6: validation accuracy = 84.44%
+Trial 180, epoch 7: validation accuracy = 70.46%
+Trial 180, epoch 8: validation accuracy = 78.08%
+Trial 180, epoch 9: validation accuracy = 86.06%
+Trial 180, epoch 10: validation accuracy = 85.16%
+Trial 181, epoch 1: validation accuracy = 66.74%
+Trial 181, epoch 2: validation accuracy = 68.78%
+Trial 181, epoch 3: validation accuracy = 70.88%
+Trial 181, epoch 4: validation accuracy = 84.14%
+Trial 181, epoch 5: validation accuracy = 66.78%
+Trial 181, epoch 6: validation accuracy = 84.40%
+Trial 181, epoch 7: validation accuracy = 57.52%
+Trial 181, epoch 8: validation accuracy = 84.88%
+Trial 181, epoch 9: validation accuracy = 84.88%
+Trial 181, epoch 10: validation accuracy = 85.06%
+Trial 182, epoch 1: validation accuracy = 78.18%
+Trial 182, epoch 2: validation accuracy = 72.90%
+Trial 182, epoch 3: validation accuracy = 76.64%
+Trial 182, epoch 4: validation accuracy = 81.98%
+Trial 182, epoch 5: validation accuracy = 77.16%
+Trial 182, epoch 6: validation accuracy = 78.44%[I 2026-11-16 16:36:20,511] Trial 182 finished with value: 82.54 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:40:28,864] Trial 183 finished with value: 83.86 and parameters: {'literal_budget': 34}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:44:38,618] Trial 184 finished with value: 73.6 and parameters: {'literal_budget': 37}. Best is trial 172 with value: 86.2.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 16:48:49,660] Trial 185 finished with value: 66.34 and parameters: {'literal_budget': 38}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:52:57,441] Trial 186 finished with value: 74.92 and parameters: {'literal_budget': 35}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 16:57:05,979] Trial 187 finished with value: 85.84 and parameters: {'literal_budget': 33}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 17:01:13,742] Trial 188 finished with value: 76.96 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:161: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_update = SourceModule(parameters + kernels.code_header + kernels.code_update, no_extern_c=True)
+/home/coder/ict_project/PyHierarchicalTsetlinMachineCUDA/PyHierarchicalTsetlinMachineCUDA/tm.py:203: UserWarning: The CUDA compiler succeeded, but said the following:
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+
+  mod_clauses = SourceModule(parameters + kernels.code_clauses, no_extern_c=True)
+[I 2026-11-16 17:05:24,167] Trial 189 finished with value: 69.14 and parameters: {'literal_budget': 39}. Best is trial 172 with value: 86.2.
+[I 2026-11-16 17:09:34,951] Trial 190 finished with value: 71.32 and parameters: {'literal_budget': 36}. Best is trial 172 with value: 86.2.
+
+Trial 182, epoch 7: validation accuracy = 74.06%
+Trial 182, epoch 8: validation accuracy = 83.92%
+Trial 182, epoch 9: validation accuracy = 77.94%
+Trial 182, epoch 10: validation accuracy = 82.54%
+Trial 183, epoch 1: validation accuracy = 61.32%
+Trial 183, epoch 2: validation accuracy = 60.08%
+Trial 183, epoch 3: validation accuracy = 63.06%
+Trial 183, epoch 4: validation accuracy = 83.34%
+Trial 183, epoch 5: validation accuracy = 79.80%
+Trial 183, epoch 6: validation accuracy = 71.16%
+Trial 183, epoch 7: validation accuracy = 84.58%
+Trial 183, epoch 8: validation accuracy = 82.24%
+Trial 183, epoch 9: validation accuracy = 69.32%
+Trial 183, epoch 10: validation accuracy = 83.86%
+Trial 184, epoch 1: validation accuracy = 76.04%
+Trial 184, epoch 2: validation accuracy = 82.38%
+Trial 184, epoch 3: validation accuracy = 73.20%
+Trial 184, epoch 4: validation accuracy = 83.50%
+Trial 184, epoch 5: validation accuracy = 73.02%
+Trial 184, epoch 6: validation accuracy = 66.94%
+Trial 184, epoch 7: validation accuracy = 83.36%
+Trial 184, epoch 8: validation accuracy = 85.12%
+Trial 184, epoch 9: validation accuracy = 82.92%
+Trial 184, epoch 10: validation accuracy = 73.60%
+Trial 185, epoch 1: validation accuracy = 72.00%
+Trial 185, epoch 2: validation accuracy = 83.84%
+Trial 185, epoch 3: validation accuracy = 75.48%
+Trial 185, epoch 4: validation accuracy = 69.88%
+Trial 185, epoch 5: validation accuracy = 82.58%
+Trial 185, epoch 6: validation accuracy = 84.72%
+Trial 185, epoch 7: validation accuracy = 83.44%
+Trial 185, epoch 8: validation accuracy = 70.56%
+Trial 185, epoch 9: validation accuracy = 70.80%
+Trial 185, epoch 10: validation accuracy = 66.34%
+Trial 186, epoch 1: validation accuracy = 58.48%
+Trial 186, epoch 2: validation accuracy = 63.44%
+Trial 186, epoch 3: validation accuracy = 68.26%
+Trial 186, epoch 4: validation accuracy = 76.66%
+Trial 186, epoch 5: validation accuracy = 80.90%
+Trial 186, epoch 6: validation accuracy = 84.10%
+Trial 186, epoch 7: validation accuracy = 79.34%
+Trial 186, epoch 8: validation accuracy = 81.46%
+Trial 186, epoch 9: validation accuracy = 54.78%
+Trial 186, epoch 10: validation accuracy = 74.92%
+Trial 187, epoch 1: validation accuracy = 58.00%
+Trial 187, epoch 2: validation accuracy = 81.60%
+Trial 187, epoch 3: validation accuracy = 84.42%
+Trial 187, epoch 4: validation accuracy = 81.00%
+Trial 187, epoch 5: validation accuracy = 81.02%
+Trial 187, epoch 6: validation accuracy = 83.22%
+Trial 187, epoch 7: validation accuracy = 72.28%
+Trial 187, epoch 8: validation accuracy = 82.02%
+Trial 187, epoch 9: validation accuracy = 68.94%
+Trial 187, epoch 10: validation accuracy = 85.84%
+Trial 188, epoch 1: validation accuracy = 53.86%
+Trial 188, epoch 2: validation accuracy = 54.82%
+Trial 188, epoch 3: validation accuracy = 76.18%
+Trial 188, epoch 4: validation accuracy = 71.38%
+Trial 188, epoch 5: validation accuracy = 73.44%
+Trial 188, epoch 6: validation accuracy = 72.64%
+Trial 188, epoch 7: validation accuracy = 77.26%
+Trial 188, epoch 8: validation accuracy = 85.88%
+Trial 188, epoch 9: validation accuracy = 64.28%
+Trial 188, epoch 10: validation accuracy = 76.96%
+Trial 189, epoch 1: validation accuracy = 79.76%
+Trial 189, epoch 2: validation accuracy = 61.02%
+Trial 189, epoch 3: validation accuracy = 65.10%
+Trial 189, epoch 4: validation accuracy = 71.76%
+Trial 189, epoch 5: validation accuracy = 75.58%
+Trial 189, epoch 6: validation accuracy = 76.98%
+Trial 189, epoch 7: validation accuracy = 76.26%
+Trial 189, epoch 8: validation accuracy = 80.62%
+Trial 189, epoch 9: validation accuracy = 83.38%
+Trial 189, epoch 10: validation accuracy = 69.14%
+Trial 190, epoch 1: validation accuracy = 61.24%
+Trial 190, epoch 2: validation accuracy = 83.40%
+Trial 190, epoch 3: validation accuracy = 53.24%
+Trial 190, epoch 4: validation accuracy = 78.92%
+Trial 190, epoch 5: validation accuracy = 78.04%
+Trial 190, epoch 6: validation accuracy = 64.12%
+Trial 190, epoch 7: validation accuracy = 77.40%
+Trial 190, epoch 8: validation accuracy = 81.50%
+Trial 190, epoch 9: validation accuracy = 85.46%
+Trial 190, epoch 10: validation accuracy = 71.32%
+Best validation accuracy: 86.2
+Best parameters: {'literal_budget': 35}
